@@ -1,1 +1,11 @@
-<p>personne works!</p>
+<div class="contAll col-12 col-md-4 col-lg-4">
+    <div class="titre">
+        <p>Participants:</p>
+    </div>
+    <div *ngFor="let pers of AllPersonne" class="contParticipants">
+        <div (click)="addToGroupe(pers)" class="participants">
+            <p>{{pers.nom}} / {{pers.pseudo}}</p>
+            <img src="../../assets/img/right.png" alt="Icone add">
+        </div>
+    </div>
+</div>
