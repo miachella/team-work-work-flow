@@ -3,10 +3,10 @@ node_js:
   - "12"
 before_script:
   - npm install
-script:
-  - yarn build
+script: npm run build
+before_deploy:
+  - cd $TRAVIS_BUILD_DIR
 deploy:
-  local-dir: dist/teamWorkWorkFlow
   provider: pages
   cleanup: true
   github-token: $GITHUB_TOKEN
