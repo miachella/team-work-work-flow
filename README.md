@@ -28,5 +28,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 
-
-[![Build Status](https://travis-ci.org/miachella/team-work-work-flow.svg?branch=front)](https://travis-ci.org/miachella/team-work-work-flow)
+[![Build Status](https://travis-ci.org/miachella/team-work-work-flow.svg?branch=master)](https://travis-ci.org/miachella/team-work-work-flow)
