@@ -7,7 +7,7 @@ script: npm run build
 
 deploy:
   local-dir: dist/team-work-work-flow
-  provider: pages
+  provider: test
   cleanup: true
   github-token: $GITHUB_TOKEN
   on:
