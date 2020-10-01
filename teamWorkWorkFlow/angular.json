@@ -24,7 +24,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.css"
             ],
             "scripts": []
           },
@@ -119,6 +121,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "teamWorkWorkFlow"
+    }
+  },
+  "defaultProject": "teamWorkWorkFlow",
+  "cli": {
+    "analytics": "97b7c472-cfc6-4ceb-860c-8333aeb3d8cd"
+  }
 }
