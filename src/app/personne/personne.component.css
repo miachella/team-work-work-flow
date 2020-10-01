@@ -33,6 +33,7 @@
 
 .participants img {
     width: 25px;
+    height: 25px;
     filter: contrast(0.3);
     transition: 0.3s;
     cursor: pointer;
