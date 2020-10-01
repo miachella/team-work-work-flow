@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Personne } from '../models/personne';
+import { DataService } from '../service/data.service';
 
 @Component({
   selector: 'app-team',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeamComponent implements OnInit {
 
-  constructor() { }
+  Equipe: Personne[]
+
+  constructor(private service: DataService) { }
 
   ngOnInit(): void {
+    this.findEquipe()
+  }
+
+  findEquipe() {
+    this.service.TeamPersons().subscribe(persTab => this.Equipe = persTab)
   }
 
 }
