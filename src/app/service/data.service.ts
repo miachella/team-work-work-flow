@@ -15,12 +15,18 @@ export class DataService {
 
   /* return tout les groupes */
   AllPersons(): Observable<Personne[]> {
-    return this.http.get<Personne[]>('https://teamwork-workflow.herokuapp.com/personne')
+    return this.http.get<Personne[]>('https://teamwork-workflow.herokuapp.com/personne?groupe=0')
+  }
+
+  TeamPersons(): Observable<Personne[]> {
+    return this.http.get<Personne[]>('https://teamwork-workflow.herokuapp.com/personne?groupe=1')
   }
 
   addToGroupe(personneClick: Personne) {
     this.groupeCourant.membres.push(personneClick)
   }
+
+  
 }
 
 
