@@ -4,9 +4,9 @@ node_js:
 before_script:
   - npm install
 script: npm run build
-before_deploy:
-  - cd $TRAVIS_BUILD_DIR
+
 deploy:
+  local-dir: dist/teamWorkWorkFlow
   provider: pages
   cleanup: true
   github-token: $GITHUB_TOKEN
