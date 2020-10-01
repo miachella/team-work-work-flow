@@ -5,7 +5,7 @@ before_script:
   - npm install
 script: npm run build
 deploy:
-  local-dir: dist/collegues-front
+  local-dir: dist/team-work-work-flow
   provider: pages
   cleanup: true
   github-token: $GITHUB_TOKEN
