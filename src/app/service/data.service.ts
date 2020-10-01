@@ -9,18 +9,26 @@ import { Groupe } from '../models/groupe';
 })
 export class DataService {
 
+  /* = le groupe affiché */
   groupeCourant: Groupe
 
   constructor(private http: HttpClient) { }
 
   /* return tout les groupes */
   AllPersons(): Observable<Personne[]> {
-    return this.http.get<Personne[]>('https://teamwork-workflow.herokuapp.com/personne')
+    return this.http.get<Personne[]>('https://teamwork-workflow.herokuapp.com/personne?groupe=0')
   }
 
+  TeamPersons(): Observable<Personne[]> {
+    return this.http.get<Personne[]>('https://teamwork-workflow.herokuapp.com/personne?groupe=1')
+  }
+
+  /* ajoute le participant au groupe courrant */
   addToGroupe(personneClick: Personne) {
     this.groupeCourant.membres.push(personneClick)
   }
+
+  
 }
 
 

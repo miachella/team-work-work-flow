@@ -1,0 +1,11 @@
+<div class="contAll">
+    <div class="titre">
+        <p>Equipes:</p>
+    </div>
+    <div *ngFor="let pers of Equipe" class="contParticipants">
+        <div class="participants">
+            <img src="../../assets/img/left.png" alt="Icone remove">
+            <p>{{pers.nom}} / {{pers.pseudo}}</p>
+        </div>
+    </div>
+</div>
