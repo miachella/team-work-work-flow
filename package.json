@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --base-href https://miachella.github.io/teamworkworkflow/",
+    "build": "ng build --prod --base-href https://miachella.github.io/team-work-work-flow/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
