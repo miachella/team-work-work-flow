@@ -20,9 +20,15 @@ public class PersonneService {
 	public List<Personne> getAll() {
 		return persRepo.findAll();
 	}
+
+	public List<Personne> getAllQueded() {
+		return persRepo.findAllQueded();
+	}
 	
 	
-	
+	public List<Personne> getAllByGroupe(int idGroupe) {
+		return persRepo.findAllByGroupe(idGroupe);
+	}
 	
 	
 	

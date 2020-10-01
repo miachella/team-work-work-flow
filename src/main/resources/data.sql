@@ -8,8 +8,8 @@ insert into personne(nom, prenom, pseudo, age, email) values ('Cinelli' ,'jeremy
 insert into personne(nom, prenom, pseudo, age, email) values ('Iachella','Mathilde', 'Mathouwam',68, 'ert@cqlTeam.go');
 insert into personne(nom, prenom, pseudo, age, email) values ('Humbut' , 'Marc',     'marky'    ,30, 'aze@cqlTeam.go');
 insert into personne(nom, prenom, pseudo, age, email) values ('Gelaron', 'Delphine', 'azerty'   ,25, 'qsd@cqlTeam.go');
-insert into personne(nom, prenom, pseudo, age, email) values ('Dhalor' , 'Homer',    'qsdfg'    ,45, 'wxc@cqlTeam.go');
-insert into personne(nom, prenom, pseudo, age, email) values ('kroche' , 'Sarah',    'wxcvb'    ,18, 'ert@cqlTeam.go');
+insert into personne(nom, prenom, pseudo, age, email, id_groupe) values ('Dhalor' , 'Homer',    'qsdfg'    ,45, 'wxc@cqlTeam.go',1);
+insert into personne(nom, prenom, pseudo, age, email, id_groupe) values ('kroche' , 'Sarah',    'wxcvb'    ,18, 'ert@cqlTeam.go',2);
 
 
 
